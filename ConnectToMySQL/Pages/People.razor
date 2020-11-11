@@ -1,0 +1,57 @@
+@page "/people"
+@using DataLibrary
+@using ConnectToMySQL.Models
+@using Microsoft.Extensions.Configuration
+@inject IDataAccess _data
+@inject IConfiguration _config
+
+<h3>People</h3>
+
+@if (people == null) {
+    //∆..........
+    <p>
+        <em>Loading...</em>
+    </p>
+} else {
+    foreach (var person in people) {
+        //∆..........
+        <ul class="">
+            <li><p>ID---FIRST NAME---LAST NAME</p></li>
+            <li>
+                <p>
+                    <strong>
+                        @person.Id &nbsp;&nbsp;:&nbsp;&nbsp;
+                        @person.FirstName &nbsp;&nbsp;:&nbsp;&nbsp;
+                        @person.LastName
+                    </strong>
+                </p>
+            </li>
+            <br>
+        </ul>
+    }
+}
+
+@* ∆__________________________________________________________ *@
+
+@code {
+
+    ///∆: - ©-PROPERTIES
+    //∆..............................
+        List<PersonModel> people;
+
+    //∆..............................
+
+    ///∆ ............. Functions .............
+    protected override async Task OnInitializedAsync() {
+    //∆..........
+        const string sql = "SELECT * FROM People";
+
+    /* • Specifying that LoadData<T, U> is now <PersonModel, dynamic>*/
+        people = await _data.LoadData<PersonModel, dynamic>(
+            sql: sql,
+            parameters: new {},
+            connectionStr: _config.GetConnectionString(name: "default")
+            );
+    }
+
+}

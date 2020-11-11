@@ -1,0 +1,9 @@
+/Users/josemartinez/Documents/Dotnet/BlazorServerConnectToMySQL/DataLibrary/bin/Debug/netcoreapp3.1/DataLibrary.deps.json
+/Users/josemartinez/Documents/Dotnet/BlazorServerConnectToMySQL/DataLibrary/bin/Debug/netcoreapp3.1/DataLibrary.dll
+/Users/josemartinez/Documents/Dotnet/BlazorServerConnectToMySQL/DataLibrary/bin/Debug/netcoreapp3.1/DataLibrary.pdb
+/Users/josemartinez/Documents/Dotnet/BlazorServerConnectToMySQL/DataLibrary/obj/Debug/netcoreapp3.1/DataLibrary.csprojAssemblyReference.cache
+/Users/josemartinez/Documents/Dotnet/BlazorServerConnectToMySQL/DataLibrary/obj/Debug/netcoreapp3.1/DataLibrary.AssemblyInfoInputs.cache
+/Users/josemartinez/Documents/Dotnet/BlazorServerConnectToMySQL/DataLibrary/obj/Debug/netcoreapp3.1/DataLibrary.AssemblyInfo.cs
+/Users/josemartinez/Documents/Dotnet/BlazorServerConnectToMySQL/DataLibrary/obj/Debug/netcoreapp3.1/DataLibrary.csproj.CoreCompileInputs.cache
+/Users/josemartinez/Documents/Dotnet/BlazorServerConnectToMySQL/DataLibrary/obj/Debug/netcoreapp3.1/DataLibrary.dll
+/Users/josemartinez/Documents/Dotnet/BlazorServerConnectToMySQL/DataLibrary/obj/Debug/netcoreapp3.1/DataLibrary.pdb
