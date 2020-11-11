@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace DataLibrary {
+namespace DataLibrary 
+{
     ///∆ ............. INTERFACE .............
     public interface IDataAccess {
         //∆..........
