@@ -5,6 +5,7 @@
 @inject IDataAccess _data
 @inject IConfiguration _config
 
+@* ∆__________________________________________________________ *@
 <h3>People</h3>
 
 @if (people == null) {
@@ -30,28 +31,24 @@
         </ul>
     }
 }
-
 @* ∆__________________________________________________________ *@
 
 @code {
-
     ///∆: - ©-PROPERTIES
     //∆..............................
         List<PersonModel> people;
-
     //∆..............................
 
     ///∆ ............. Functions .............
     protected override async Task OnInitializedAsync() {
-    //∆..........
+        //∆..........
         const string sql = "SELECT * FROM People";
 
-    /* • Specifying that LoadData<T, U> is now <PersonModel, dynamic>*/
+        /* • Specifying that LoadData<T, U> is now <PersonModel, dynamic>*/
         people = await _data.LoadData<PersonModel, dynamic>(
             sql: sql,
             parameters: new {},
             connectionStr: _config.GetConnectionString(name: "default")
             );
     }
-
 }
